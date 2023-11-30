@@ -1,4 +1,4 @@
-package id.mzennis.toktik.ui
+package id.mzennis.toktik.main
 
 import android.app.Activity
 import android.content.Intent
@@ -6,14 +6,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import id.mzennis.toktik.MyApplication
 import id.mzennis.toktik.databinding.FragmentChildBinding
-import id.mzennis.toktik.ui.login.LoginActivity
+import id.mzennis.toktik.login.LoginActivity
+import id.mzennis.toktik.main.di.DaggerMainComponent
 import javax.inject.Inject
 
 class ChildFragment : Fragment() {
@@ -48,8 +48,9 @@ class ChildFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        (requireActivity().application as MyApplication).appComponent
-            .mainComponent()
+        DaggerMainComponent.builder()
+            .applicationComponent((requireActivity().application as MyApplication).appComponent)
+            .build()
             .inject(this)
     }
 

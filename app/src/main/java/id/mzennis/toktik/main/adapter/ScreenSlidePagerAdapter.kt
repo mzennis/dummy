@@ -1,8 +1,8 @@
-package id.mzennis.toktik.ui.adapter
+package id.mzennis.toktik.main.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import id.mzennis.toktik.ui.ChildFragment
+import id.mzennis.toktik.main.ChildFragment
 
 class ScreenSlidePagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 

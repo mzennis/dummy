@@ -1,4 +1,4 @@
-package id.mzennis.toktik.di.viewmodel
+package id.mzennis.toktik.common.di.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

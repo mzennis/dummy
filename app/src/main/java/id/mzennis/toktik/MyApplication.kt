@@ -1,8 +1,8 @@
 package id.mzennis.toktik
 
 import android.app.Application
-import id.mzennis.toktik.di.ApplicationComponent
-import id.mzennis.toktik.di.DaggerApplicationComponent
+import id.mzennis.toktik.common.di.ApplicationComponent
+import id.mzennis.toktik.common.di.DaggerApplicationComponent
 
 class MyApplication : Application() {
 

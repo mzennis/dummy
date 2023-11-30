@@ -1,8 +1,8 @@
-package id.mzennis.toktik.ui
+package id.mzennis.toktik.main
 
 import androidx.lifecycle.ViewModel
-import id.mzennis.toktik.data.MyRepository
-import id.mzennis.toktik.data.UserSession
+import id.mzennis.toktik.main.data.MyRepository
+import id.mzennis.toktik.common.UserSession
 import javax.inject.Inject
 
 class ChildViewModel @Inject constructor(

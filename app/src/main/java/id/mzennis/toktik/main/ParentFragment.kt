@@ -1,4 +1,4 @@
-package id.mzennis.toktik.ui
+package id.mzennis.toktik.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
 import id.mzennis.toktik.databinding.FragmentParentBinding
-import id.mzennis.toktik.ui.adapter.ScreenSlidePagerAdapter
+import id.mzennis.toktik.main.adapter.ScreenSlidePagerAdapter
 
 class ParentFragment : Fragment() {
 

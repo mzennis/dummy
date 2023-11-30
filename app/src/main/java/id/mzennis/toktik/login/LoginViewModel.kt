@@ -1,7 +1,7 @@
-package id.mzennis.toktik.ui.login
+package id.mzennis.toktik.login
 
 import androidx.lifecycle.ViewModel
-import id.mzennis.toktik.data.UserSession
+import id.mzennis.toktik.common.UserSession
 import javax.inject.Inject
 
 class LoginViewModel @Inject constructor(

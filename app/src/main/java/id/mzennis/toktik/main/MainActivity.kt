@@ -1,4 +1,4 @@
-package id.mzennis.toktik.ui
+package id.mzennis.toktik.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Toktik"
         tools:targetApi="31">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="id.mzennis.toktik.ui.login.LoginActivity" />
+        <activity android:name="id.mzennis.toktik.login.LoginActivity" />
 
     </application>
 

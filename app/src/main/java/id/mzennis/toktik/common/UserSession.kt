@@ -1,4 +1,4 @@
-package id.mzennis.toktik.data
+package id.mzennis.toktik.common
 
 import android.util.Log
 
