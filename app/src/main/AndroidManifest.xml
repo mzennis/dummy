@@ -23,7 +23,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="id.mzennis.toktik.login.LoginActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".home.HomeActivity" />
 
     </application>
 

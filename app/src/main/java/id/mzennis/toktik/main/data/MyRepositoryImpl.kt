@@ -1,10 +1,12 @@
 package id.mzennis.toktik.main.data
 
+import id.mzennis.toktik.common.util.logRefClass
 import javax.inject.Inject
 
 class MyRepositoryImpl @Inject constructor() : MyRepository {
 
     override fun getList(position: Int): List<String> {
+        logRefClass(this)
         val dummies =  buildList {
             add("Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
             add("when an unknown printer took a galley of type and scrambled it to make a type specimen book")

@@ -7,6 +7,7 @@ import id.mzennis.toktik.common.di.DaggerApplicationComponent
 class MyApplication : Application() {
 
     lateinit var appComponent: ApplicationComponent
+        private set
 
     override fun onCreate() {
         super.onCreate()

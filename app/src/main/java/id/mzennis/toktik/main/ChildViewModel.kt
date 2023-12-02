@@ -1,8 +1,9 @@
 package id.mzennis.toktik.main
 
 import androidx.lifecycle.ViewModel
-import id.mzennis.toktik.main.data.MyRepository
 import id.mzennis.toktik.common.UserSession
+import id.mzennis.toktik.common.util.logRefClass
+import id.mzennis.toktik.main.data.MyRepository
 import javax.inject.Inject
 
 class ChildViewModel @Inject constructor(
@@ -13,5 +14,8 @@ class ChildViewModel @Inject constructor(
     val isLoggedIn: Boolean
         get() = userSession.isLoggedIn
 
-    fun getMyData(position: Int) = myRepository.getList(position)
+    fun getMyData(position: Int): List<String> {
+        logRefClass(this)
+        return myRepository.getList(position)
+    }
 }

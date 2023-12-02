@@ -10,10 +10,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
-import id.mzennis.toktik.MyApplication
 import id.mzennis.toktik.databinding.FragmentChildBinding
 import id.mzennis.toktik.login.LoginActivity
-import id.mzennis.toktik.main.di.DaggerMainComponent
 import javax.inject.Inject
 
 class ChildFragment : Fragment() {
@@ -48,10 +46,7 @@ class ChildFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        DaggerMainComponent.builder()
-            .applicationComponent((requireActivity().application as MyApplication).appComponent)
-            .build()
-            .inject(this)
+        (requireActivity() as MainActivity).mainComponent.inject(this)
     }
 
     override fun onCreateView(

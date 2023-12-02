@@ -1,12 +1,15 @@
 package id.mzennis.toktik.common
 
-import android.util.Log
+import id.mzennis.toktik.common.util.logRefClass
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class UserSession {
+@Singleton
+class UserSession @Inject constructor() {
 
     val isLoggedIn: Boolean
         get() {
-            Log.d("MzennisApp", "Ref of ${this::class.java.canonicalName} class: $this")
+            logRefClass(this)
             return mIsLoggedIn
         }
 

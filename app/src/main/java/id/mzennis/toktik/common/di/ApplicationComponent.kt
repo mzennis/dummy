@@ -5,8 +5,7 @@ import id.mzennis.toktik.common.UserSession
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [ApplicationModule::class])
+@Component
 interface ApplicationComponent {
-
-    fun userSession(): UserSession
+    fun userSession(): UserSession // define methods to access the application-scoped object
 }
