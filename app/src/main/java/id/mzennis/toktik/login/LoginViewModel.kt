@@ -2,19 +2,19 @@ package id.mzennis.toktik.login
 
 import androidx.lifecycle.ViewModel
 import dagger.Lazy
-import id.mzennis.toktik.common.UserSession
+import id.mzennis.toktik.common.Session
 import javax.inject.Inject
 
 class LoginViewModel @Inject constructor(
-    private val userSession: Lazy<UserSession>
+    private val session: Lazy<Session>
 ) : ViewModel() {
 
     val isLoggedIn: Boolean
         get() {
-            return userSession.get().isLoggedIn
+            return session.get().isLoggedIn
         }
 
     fun setLogin(state: Boolean) {
-        userSession.get().setLogin(state)
+        session.get().setLogin(state)
     }
 }

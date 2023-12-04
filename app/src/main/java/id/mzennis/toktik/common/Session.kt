@@ -1,11 +1,8 @@
 package id.mzennis.toktik.common
 
 import id.mzennis.toktik.common.util.logRefClass
-import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class UserSession @Inject constructor() {
+class Session {
 
     val isLoggedIn: Boolean
         get() {
