@@ -55,6 +55,10 @@ dependencies {
     implementation("com.google.dagger:dagger:2.48.1")
     ksp("com.google.dagger:dagger-compiler:2.48.1")
 
+    implementation("io.ktor:ktor-client-cio:2.3.6")
+    implementation("io.ktor:ktor-client-content-negotiation:2.3.6")
+    implementation("io.ktor:ktor-serialization-gson:2.3.6")
+
     testImplementation("junit:junit:4.13.2")
 
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
