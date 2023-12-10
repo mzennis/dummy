@@ -24,7 +24,8 @@ object NetworkService {
     suspend fun getCountries(): List<Country> {
         val response = ktorClient.post(URL) {
             contentType(ContentType.Application.Json)
-            setBody("{\"query\":\"query{countries{name languages{name}}}\",\"variables\":{}}")
+//            setBody("{\"query\":\"query{countries{name languages{name}}}\",\"variables\":{}}")
+            setBody("{\"query\":\"query{countries{name languages{name}}}\"}")
         }.body<Country.Response>()
         return response.data.countries
     }
